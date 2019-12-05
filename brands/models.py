@@ -2,14 +2,18 @@ from django.db import models
 
 # Create your models here.
 
-class Brands_list(models.Model):
+class Brands(models.Model):
 
 #   id          = models.AutoField()
-    name        = models.IntegerField(max_length=255)
+    name        = models.TextField(max_length=255)
     email       = models.EmailField()
+
+
+    """
     address     = models.TextField(max_length=500)
     number      = models.TextField(max_length=20)
     launch_date = models.DateField()
     type        = models.TextField(max_length=50)
     status      = models.IntegerField()
     timestamps  = models.DateTimeField()
+    """

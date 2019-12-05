@@ -23,7 +23,9 @@ from brands import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('homepage/', views.homepage)
+    path('homepage/', views.homepage),
+
+
     #path('',include ('ironman_app.urls')),
 
 ]
